@@ -1,0 +1,84 @@
+#skill{
+  height: 100vh;
+ 
+}
+#skills {
+  text-align: center;
+  padding: 50px 20px;
+  /* background: #123; */
+
+}
+
+#skills h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-family: "Kalam", cursive;
+    font-weight: 900;
+    font-style: normal;
+   
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skill {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 60px;
+  border-radius: 10px solid;
+
+}
+
+.skill img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px solid;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(197, 13, 49, 0.815);
+  /* box-shadow: 0 10px 20px rgba(207, 18, 194, 0.703); */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.skills-container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  #skills {
+    padding: 30px 10px;
+    height: 135vh;
+    /* Adjust padding for smaller screens */
+  }
+
+  #skills h2 {
+    font-size: 1.5em; /* Decrease font size for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .skills-container {
+    justify-content: flex-start; /* Align skills to start */
+  }
+
+  .skill {
+    width: calc(50% - 20px); /* Display skills in two columns */
+    margin: 20px 5px; /* Adjust margin for smaller screens */
+  }
+}

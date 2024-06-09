@@ -1,0 +1,109 @@
+#project {
+ 
+   padding: 50px;
+   min-height: 100vh; /* Changed height to min-height for better responsiveness */
+   /* background-color: #f3f3f3;  */
+   /* Background color for the section */
+}
+
+#project h1 {
+   text-align: center;
+   font-size: 36px;
+   margin-bottom: 30px;
+   /* color: #333; */
+   letter-spacing: 1.5px;
+   margin-bottom: 20px;
+  font-size: 2em;
+  font-family: "Kalam", cursive;
+    font-weight: 900;
+}
+
+#project .btn {
+   height: 5vh;
+   width: 8rem;
+   margin: 0px 0px 20px 30px;
+   border-radius: 6px;
+   background-color: black;
+   margin-left: 35vw;
+   transition: width 0.3s, height 0.3s;
+ }
+ 
+ #project .btn:hover {
+   background-color: green;
+   width: 9rem;
+   height: 6vh;
+ }
+ 
+ #project .btn a {
+   display: inline-block; 
+   /* Added to ensure padd */
+   color: white;
+   font-size: 1rem;
+   font-family: 'Poppins', sans-serif;
+   text-decoration: none;
+ }
+ 
+
+.project-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.project-box {
+   background: #fff;
+   border-radius: 10px;
+   padding: 20px;
+   flex-basis: calc(33.333% - 20px);
+   box-shadow: 0 5px 15px rgba(189, 87, 19, 0.838); /* Increased box shadow */
+   transition: box-shadow 0.3s ease;
+   text-align: center;
+   margin-bottom: 20px; /* Added margin-bottom for spacing between project boxes */
+}
+
+.project-box:hover {
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced hover effect */
+}
+
+.project-box h3 {
+   margin-top: 0;
+   font-size: 24px;
+   color: #444;
+   font-family:Georgia, 'Times New Roman', Times, serif; /* Changed font family */
+}
+
+.project-box p {
+   font-family: Arial, sans-serif; /* Changed font family */
+   font-size: 16px;
+   color: #666;
+   line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+   .project-box {
+       flex-basis: calc(50% - 20px);
+   }
+
+   #project .btn {
+      height: 5vh;
+      width: 8rem;
+      margin: 14px 0px 21px 0px;
+      border-radius: 6px;
+      background-color: black;
+      margin-left: 10vw;
+      transition: width 0.3s, height 0.3s;
+    }
+    
+    #project .btn:hover {
+      background-color: green;
+      width: 9rem;
+      height: 6vh;
+    }
+}
+
+@media (max-width: 480px) {
+   .project-box {
+       flex-basis: 100%;
+   }
+}

@@ -1,0 +1,172 @@
+:root {
+  --body-bg: #123;
+  --nav-bg: #234;
+   /* --body-bg: black */
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+hr.line {
+  border-top:  2px solid rgb(15, 4, 4);
+}
+html {
+  font-family: system-ui;
+}
+
+body { 
+  background-color: var(--body-bg);
+  min-height: 200vh;
+  margin: 0;
+  font-size: 1.25rem;
+  color: rgb(93, 98, 105);
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  /* gap: 4rem; */
+}
+
+nav { 
+  position: sticky;
+  top: 0;
+  max-height: 100svh;
+  background-color: var(--nav-bg);
+}
+
+.nav-list {
+  list-style: none;
+  display: grid;
+  gap: 3rem;
+  padding-block: 2rem;
+  font-size: 1rem;
+}
+
+.nav-list li {
+  padding: 1rem 1rem;
+  margin-left: 2rem;
+  border-radius: 100vw 0 0 100vw;
+}
+
+.nav-list li.active {
+  view-transition-name: activeNavTab;
+  background: var(--body-bg);
+  padding: 1vh 2vw;
+  position: relative;
+}
+
+.nav-list li:nth-child(1) a {
+  view-transition-name: naveLink-1;
+}
+
+.nav-list li:nth-child(2) a {
+  view-transition-name: naveLink-2;
+}
+
+.nav-list li:nth-child(3) a {
+  view-transition-name: naveLink-3;
+}
+
+::view-transition-group(activeNavTab) {
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+
+.nav-list li.active::before,
+.nav-list li.active::after {
+  --border-radius: 0.8rem;
+  content: '';
+  position: absolute;
+  width: var(--border-radius);
+  height: var(--border-radius);
+  right: 0;
+  background: var(--nav-bg);
+}
+
+.nav-list li.active::before {
+  top: calc(var(--border-radius) * -1);
+  box-shadow: 5px 5px 0 5px var(--body-bg);
+  border-radius: 0 0 100vw 0;
+}
+
+.nav-list li.active::after {
+  border-radius: 0 100vw 0 0;
+  box-shadow: 5px -5px 0 5px var(--body-bg);
+  bottom: calc(var(--border-radius) * -1);
+}
+
+.nav-list a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  z-index: 10;
+}
+
+/* Media query for phone screens */
+@media (max-width: 768px) {
+  body {
+    display: block; /* Change the layout to block for smaller screens */
+  }
+
+  nav {
+    position: relative; /* Change the position to relative */
+    max-height: none; /* Remove max-height */
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon */
+    cursor: pointer;
+    padding: 17px;
+    background: var(--nav-bg);
+    color: white;
+    font-size: 1.5rem;
+    position: sticky; /* Fix the menu icon position */
+    top: 0; /* Position it at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+  }
+
+  
+   
+  
+  
+  .nav-list {
+    display: none; /* Hide the nav list by default */
+    position: absolute;
+    top: 3.5rem; /* Adjust position to be below the menu icon */
+    left: 0;
+    width: 100%;
+    background: var(--nav-bg);
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-list li {
+    margin: 0;
+    padding: 1rem;
+    border-radius: 0; /* Remove border radius for items */
+    text-align: center;
+    background: transparent; /* Transparent background for nav list items */
+  }
+
+  .nav-list li.active {
+    background: var(--body-bg);
+  }
+
+  .nav-list li a {
+    display: block;
+    padding: -2rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-list.show {
+    display: flex; /* Show nav list when the menu is active */
+  }
+
+
+
+  
+}

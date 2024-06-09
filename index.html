@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Homestyle.css" />
+    <link rel="stylesheet" href="aboutstyle.css" />
+    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="Skillstyle.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav>
+        <div class="menu-icon" style="background-color: black;" onclick="toggleNav()">☰ Gk 
+     
+        </div>
+      
+    
+      <ul class="nav-list">
+        <li id="nav-home" class="active">
+          <a href="#home" onclick="showSection('home')">Home</a>
+        </li>
+        <li id="nav-about">
+          <a href="#about" onclick="showSection('about')">About</a>
+        </li>
+        <li id="nav-skills">
+          <a href="#skills" onclick="showSection('skills')">Skills</a>
+        </li>
+        <li id="nav-project">
+          <a href="#project" onclick="showSection('project')">Project</a>
+        </li>
+        <li id="nav-contact">
+          <a href="#contact" onclick="showSection('contact')">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section id="home" class="active">
+        <video tabindex="-1" role="application" id="vjs_video_3_html5_api" class="vjs-tech" loop="" muted="muted" autoplay="" src="https://cdn.pixabay.com/video/2022/10/24/136283-764387738_large.mp4"></video>
+        <div class="intro">
+            <h2>Hey,</h2>
+            <p id="intro-text">I'm Gautam, a student at DTU(2021-2025),
+            </p> <span id="highlight">diving deep into the world of software engineering.</span>
+        </div>
+        <div class="himage">
+            <img src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg" alt="Software Developer">
+        </div>
+    </section>
+         <!-- home  -->
+          
+          
+          
+
+      <section id="about">
+        <h1>About me..!</h1>
+        <div class="container">
+            <div class="box">
+                <h2>Schooling 10+2</h2>
+                <p>Goverment Boys Senior Secondary School </p>
+                <p>Marks: 85%</p>
+            </div>
+            <div class="box">
+                <h2>College</h2>
+                <p>Delhi Technological University</p>
+                <p>B.Tech: Computer Science and Mathematics</p>
+                <p>CGPA : 7.37</p>
+            </div>
+        </div>
+
+        <div class="about-me">
+            <p class="aboutme">
+                Greetings! I'm Gautam Kumar, a dedicated software engineer located in India. My expertise spans TypeScript, JavaScript, Node.js, React.js, and Next.js, encompassing both frontend and backend development.
+            </p>
+            <p class="aboutme a">
+                I have a proven track record of crafting high-quality digital solutions, from creating seamless user interfaces with React.js to architecting robust backend systems using Node.js. My focus is always on delivering clean, efficient, and scalable code that exceeds expectations.
+            </p>
+            <p class="aboutme b">
+                Throughout my career, I've had the opportunity to work on a variety of projects, each presenting unique challenges and opportunities for growth. I thrive on the continuous learning and problem-solving inherent in the tech industry.
+            </p>
+            <p class="aboutme c">
+                Beyond coding, I enjoy staying abreast of the latest technological advancements and collaborating with fellow enthusiasts. Interested in discussing how we can collaborate on your next project? Feel free to get in touch. Let's transform ideas into reality and make a meaningful impact together.
+            </p>
+        </div>
+    </section>
+  
+
+
+
+
+
+
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+          <div class="skill" data-skill="C++">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb"  >
+          </div>
+          <div class="skill" data-skill="JavaScript">
+            <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-nodejs-9294859-7578002.png?f=webp" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb"  >
+          </div>
+          <div class="skill" data-skill="Node.js">
+            <img src="https://wallpapers.com/images/hd/node-j-s-logo-green-background-nzf99qlthw44i9hg.jpg" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" >
+          </div>
+          <div class="skill" data-skill="Express">
+            <img src="https://miro.medium.com/v2/resize:fit:805/1*t40l2rOzSEXZbvGWClW-Pw.png" class="sFlh5c pT0Scc iPVvYb"  >
+          </div>
+          <div class="skill" data-skill="React.js">
+            <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-react-9294867-7578010.png?f=webp" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb"   >
+          </div>
+          <div class="skill" data-skill="Mongoose">
+            <img src="https://w7.pngwing.com/pngs/63/19/png-transparent-mongodb-database-nosql-postgresql-mongo-text-logo-business-thumbnail.png" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="height: 90px;
+            width: 90px;
+            
+            border-radius: 50%;
+            display: inline-block;" >
+          </div>
+          <div class="skill" data-skill="MySQL">
+            <img src="https://cdn3d.iconscout.com/3d/free/preview/free-mysql-9294870-7578013.png?f=webp&amp;h=700" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="height: 90px;
+            width: 90px;
+            
+            border-radius: 50%;
+            display: inline-block;" >
+          </div>
+          <div class="skill" data-skill="DSA">
+            <img src="https://miro.medium.com/v2/resize:fit:1400/0*7AHKqhGVaDWZJ1L_.png" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb">
+          </div>
+          <div class="skill" data-skill="C">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 360px; height: 87px; margin: 0px; width: 77px;" >
+          </div>
+          <div class="skill" data-skill="Python">
+            <img src="https://banner2.cleanpng.com/20180325/kpq/kisspng-python-logo-programmer-fierce-python-cliparts-5ab7bde1954e21.4104715915219911376116.jpg" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="height: 100px;
+            width: 100px;
+            
+            border-radius: 50%;
+            display: inline-block;" >
+          </div>
+          
+            <div class="skill" data-skill="HTML">
+              <img src="https://freesvg.org/img/HTML-Icon-Final.png" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" >
+          </div>
+            <div class="skill" data-skill="CSS">
+              <img src="https://e1.pngegg.com/pngimages/326/868/png-clipart-css3-badge-blue-and-white-css-icon-thumbnail.png" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="height: 90px;
+              width: 90px;
+              
+              border-radius: 50%;
+              display: inline-block;">
+          </div>
+          </div>
+      </div>
+  </section>
+  <script src="./script.js"></script>
+  <section id="project">
+    <h1>Project</h1>
+    <button class="btn"><a href="https://github.com/Gautam-kr-rai" target="_blank">Github
+      Profile</a></button>
+    <div class="project-container">
+        <div class="project-box">
+            <h3>Real-time chat application</h3>
+            <p>Built a real-time messaging application with Socket.io, Node.js, and Express.js for
+              seamless, interactive communication</p>
+              <P>streamlined communication and enhanced user experience within a protected
+                environment.</P>
+        </div>
+        <div class="project-box">
+            <h3>Blog's Page</h3>
+            <p>Developed a personal blog page using React.js, HTML & CSS to share insights on [topics].
+              Implemented responsive design principles for optimal viewing on various devices. Integrated
+              functionalities such as [list any specific features or functionalities].</p>
+        </div>
+        <div class="project-box">
+            <h3>food resturant web-site</h3>
+            <p>Developed a responsive static website using HTML, CSS, and JavaScript for a user-friendly
+              experience
+              Hosted on my GitHub profile for easy accessibility i.e:
+              <a href="https://gautam-kr-rai.github.io/foodcourt/">Link</a> </p>
+        </div>
+        <div class="project-box">
+            <h3>To-do list</h3>
+            <p>"A dynamic to-do list application developed with React.js, featuring drag-and-drop functionality for easy task organization. Users can rearrange tasks by dragging them to different positions, enhancing the flexibility of task management. The app supports task creation, editing, deletion, and offers a visually appealing, responsive design."</p>
+        </div>
+        <!-- <div class="project-box">
+            <h3>Calculator</h3>
+            <p>Description of Project 5.</p>
+        </div> -->
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section id="contact">
+        <h1>Get in touch...</h1>
+        <div class="contact-container">
+          <div class="logos">
+            <div class="logo-item">
+              <a href="https://www.linkedin.com/in/gautam-kumar-30b459228/"
+              >
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4096/4096186.png"
+                alt="LinkedIn logo"
+                class="social-icon"
+              />
+                <span>Linkedin</span></a
+              >
+            </div>
+            <div class="logo-item">
+              <a href="mailto:gk965069@gmail.com">
+                <img
+                  srcset="
+                    https://cdn.pixabay.com/photo/2016/01/26/17/15/gmail-1162901_960_720.png 1x,
+                    https://cdn.pixabay.com/photo/2016/01/26/17/15/gmail-1162901_1280.png    2x
+                  "
+                  src="https://cdn.pixabay.com/photo/2016/01/26/17/15/gmail-1162901_1280.png"
+                  alt="Gmail logo"
+                  class="social-icon"
+                />
+                
+                <span>E-mail</span></a>
+            </div>
+            <div class="logo-item">
+              <a href="https://github.com/Gautam-kr-rai">
+                <img
+                  srcset="
+                    https://cdn.pixabay.com/photo/2013/07/12/19/25/github-154769_960_720.png 1x,
+                    https://cdn.pixabay.com/photo/2013/07/12/19/25/github-154769_1280.png    2x
+                  "
+                  src="https://cdn.pixabay.com/photo/2013/07/12/19/25/github-154769_1280.png"
+                  alt="GitHub logo"
+                  class="social-icon"
+                />
+
+                <span> Git-hub</span></a
+              >
+            </div>
+          </div>
+          <div id="contactbox">
+            <form action="">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone No.</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Id</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter your message"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+<hr class="line">
+      <footer id="footer">
+        <div class="footer-content">
+          <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- about -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const cards = document.querySelectorAll('.info-card');
+          cards.forEach(card => {
+              card.classList.add('animated');
+          });
+      });
+  </script>
+
+  <!-- skills -->
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const skills = document.querySelectorAll('.skill');
+    
+      skills.forEach(skill => {
+          skill.addEventListener('mouseover', () => {
+              skill.style.transform = 'scale(1.2)';
+              skill.style.transition = 'transform 0.3s';
+          });
+    
+          skill.addEventListener('mouseout', () => {
+              skill.style.transform = 'scale(1)';
+              skill.style.transition = 'transform 0.3s';
+          });
+      });
+    });
+  </script>
+  
+  <!-- navbar -->
+    <script>
+      function showSection(sectionId) {
+        // Hide all sections
+        document.querySelectorAll("section").forEach((section) => {
+          section.classList.remove("active");
+        });
+
+        // Remove active class from all nav items
+        document.querySelectorAll(".nav-list li").forEach((navItem) => {
+          navItem.classList.remove("active");
+        });
+
+        // Show the selected section
+        document.getElementById(sectionId).classList.add("active");
+
+        // Set the active class on the corresponding nav item
+        document.getElementById("nav-" + sectionId).classList.add("active");
+      }
+    </script>
+
+
+  </body>
+</html>

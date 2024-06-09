@@ -1,0 +1,127 @@
+#contact {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  
+}
+
+.contact-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.logos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+  margin-right: 10px;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.logo-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logoline {
+  font-size: 20px;
+  color: #982a2a;
+}
+
+#contactbox {
+  flex: 2;
+  margin-right: 60px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+
+@media (max-width: 768px) {
+  #contact {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .contact-container {
+    flex-direction: column; /* Display items in a column for smaller screens */
+    align-items: center; /* Center items horizontally for smaller screens */
+  }
+
+  .logos {
+    flex-direction: column; /* Align logos horizontally for smaller screens */
+    margin: 20px 0; /* Adjust margin for smaller screens */
+  }
+
+  .logos .logo-item {
+    margin: 0 20px; /* Adjust margin between logo items for smaller screens */
+  }
+
+  .social-icon {
+    width: 40px; /* Reduce size of social icons for smaller screens */
+    height: 40px; /* Reduce size of social icons for smaller screens */
+  }
+
+  #contactbox {
+    margin-right: 0; /* Remove right margin for smaller screens */
+  }
+
+  input,
+  textarea {
+    padding: 8px; /* Reduce padding for input fields for smaller screens */
+    font-size: 14px; /* Reduce font size for input fields for smaller screens */
+  }
+
+  .btn {
+    padding: 8px; /* Reduce padding for button for smaller screens */
+    font-size: 14px; /* Reduce font size for button for smaller screens */
+  }
+}

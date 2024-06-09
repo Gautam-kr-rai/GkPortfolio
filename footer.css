@@ -1,0 +1,20 @@
+ 
+#footer { 
+  height: 10vh;
+  background: #6f2f2f;
+  color: rgb(176, 161, 161);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
